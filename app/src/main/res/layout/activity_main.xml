@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:layout_width="411dp"
+        android:layout_height="144dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="362dp">
+
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="Suma"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="483dp" />
+
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Resta"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="514dp" />
+
+        <RadioButton
+            android:id="@+id/rb3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Multiplicacion"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="546dp" />
+
+        <RadioButton
+            android:id="@+id/rb4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Division"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="581dp" />
+    </RadioGroup>
+
+    <GridView
+        android:id="@+id/Datosgv"
+        android:layout_width="match_parent"
+        android:layout_height="196dp"
+        android:layout_marginTop="40dp"
+        android:numColumns="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ListaDesplegable" />
+
+    <Spinner
+        android:id="@+id/ListaDesplegable"
+        android:layout_width="330dp"
+        android:layout_height="41dp"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="37dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="checaRadioBoton"
+        android:text="Verifica Radio "
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="591dp" />
+
+</android.support.constraint.ConstraintLayout>
